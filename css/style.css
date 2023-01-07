@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Oxygen:wght@300;400;700&display=swap');
+
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Oxygen', sans-serif;
+'Dancing Script', cursive;
+*/
+
+/* -------------------------------------- 
+Comienza CSS HEADER
+---------------------------------------*/
+.nav-bar{
+    background-color: #829460;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-logo-patitas-salvajes{
+    padding: 0px 0px 0px 40px;
+}
+
+.nav-bar-logo-patitas-salvajes img{
+    width: 50px;
+    height: 50px;
+}
+
+.menu-navegacion {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 8px 0px 0px 0px;
+}
+
+.menu-navegacion li a{
+    display: inline-block;
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.dropdown:hover {
+    background-color: #FFE1E1;;
+}
+
+.dropdown-content {
+    background-color:#829460;
+    width: 170px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: left;
+    padding: 12px 16px;
+}
+
+.dropdown-content a:hover {background-color: #FFE1E1; width: 100%;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.redes-sociales{
+    padding: 0px 40px 0px 0px;
+}
+
+.redes-sociales img{
+    height: 50px;
+    width: 50px
+}
+/* -------------------------------------- 
+Termina CSS HEADER 
+---------------------------------------*/
+
+
+/* -------------------------------------- 
+Comienza CSS pagina INDEX 
+---------------------------------------*/
+
+/* --------- Comienza CSS Imagen de portada + Titulo* ---------*/
+.portada-patitas-salvajes{
+    background-image: url(../assets/index/group-of-dogs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 1000px;
+}
+
+.portada-patitas-salvajes h1{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.portada-patitas-salvajes h2{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.portada-patitas-salvajes p{
+    color: #FFE1E1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 62%;
+    left: 50%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold; 
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+/*--------- Termina CSS Imagen de portada + Titulo* ---------*/
+
+/*--------- Comienza CSS presentacion --------- */
+.quienes-somos{
+    background-color: #829460;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.quienes-somos-subtitulo h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.quienes-somos-bienvenida h3{
+    color: white;
+    font-family: 'Oxygen', sans-serif;  
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 30px ;
+}
+
+.quienes-somos-presentacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.quienes-somos-presentacion p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    text-align: justify;
+    padding: 10px 0px;
+    width: 700px;
+}
+
+.quienes-somos-presentacion img{ 
+    border-style: groove;
+    border-color:  black;
+    outline: 3px solid #FFE1E1;
+    margin-bottom: 20px;
+}
+/*--------- Termina CSS presentacion ---------*/
+
+/*--------- Comienza CSS Nuestra Mision ---------*/
+.nuestra-mision{
+    background-color: white;;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.nuestra-mision h2{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container-misiones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.misiones{
+    width: 33%;
+}
+
+.misiones img{
+    width: 20px;
+    height: 20px;
+}
+
+.misiones h3{
+    color: black;   
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.misiones p{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500; 
+    font-size: 14px;
+    text-align: center; 
+    padding: 0px 10px 20px 10px;
+}
+/*--------- Termina CSS Nuestra Mision ---------*/
+
+/*--------- Comienza CSS Trabajo ---------*/
+.nuestro-trabajo{
+    background-color:#829460;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.nuestro-trabajo-titulo h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container-etapas-trabajo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.etapas-trabajo{
+    width: 33%;
+    text-align: center; 
+}
+
+.etapas-trabajo h3{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.etapas-trabajo img{
+    width: 300px;
+    height: 200px;
+    border-radius: 200px 100px;
+    border-style: ridge;
+    outline: 3px solid #FFE1E1;
+}
+
+.etapas-trabajo p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    padding: 0px 20px 20px; 
+}
+
+.etapas-trabajo a{
+    text-decoration: none;
+}
+
+.etapas-trabajo a:hover{color: #FFE1E1; font-weight:700}
+/*--------- Termina CSS Trabajo ---------*/
+
+/*--------- Comienza CSS El Equipo ---------*/
+.el-equipo{
+    background-color: white;;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.el-equipo h2{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container-el-equipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.container-el-equipo h3{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: center;
+}
+
+.container-el-equipo p{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container-el-equipo img{
+    width: 350px;
+    height: 250px;
+    border-style: groove;
+    border-color:  #829460;
+}
+/*--------- Termina CSS El Equipo ---------*/
+
+/* -------------------------------------- 
+Termina CSS pagina INDEX 
+---------------------------------------*/
+
+
+
+/* -------------------------------------- 
+Comienza CSS footer 
+---------------------------------------*/
+.footer{
+    background-image: linear-gradient(to right bottom, #9db176, #9caf75, #9bad74, #99ac74, #98aa73, #96a871, #93a56f, #91a36d, #8d9f6a, #899b66, #869863, #829460);
+}
+
+.footer h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bolder; 
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.mapa{
+    width: 600px;
+    height: 335px;
+}
+
+.container-formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.fila p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.fila img{
+    width: 25px;
+    height: 25px;
+}
+
+.place{
+    display: flex;
+}
+
+.mail{
+    display: flex;
+}
+
+.mail img{
+    margin-top: 2px;
+}
+
+.phone{
+    display: flex;
+}
+
+.datos-personales-relleno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.datos-personales-relleno input{
+    background-color: #EEEEEE;
+    height: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    border: none;
+    padding-right: 120px;
+
+}
+
+.motivo-de-contacto-titulo h3{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.motivo-contacto{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    gap: 30px;
+}
+
+.motivo-contacto label{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border: none;
+}
+
+.mensaje-contacto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mensaje-contacto input{
+    background-color: #EEEEEE;
+    height: 100px;
+    width: 1100px;
+    font-size: 14px;
+    text-align: center; 
+    border: none;
+}
+
+.enviar-limpiar-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.enviar-limpiar-form input{
+    background-color: #EEEEEE;
+    border: none;
+    font-size: 15px;
+    border: 4px solid #ffe1e1;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.enviar-limpiar-form input:hover{color:black; background-color: #FFE1E1; transform: scale(1.1);}
+.enviar-limpiar-form input:active{color: red;}
+
+.datos-final{
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    padding: 20px 0px 20px 0px;
+} 
