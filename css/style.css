@@ -1098,6 +1098,572 @@ Comienza CSS pagina ELREFUGIO
 Termina CSS pagina ELREFUGIO 
 ---------------------------------------------------------------*/
 
+
+
+/* -------------------------------------- 
+Comienza CSS pagina VISITAS EDCUATIVAS 
+---------------------------------------*/
+.visitas-educativas{
+    background-image: url(../assets/actividades-escolares/actividad-escolar-portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 600px;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.container-visitas-educativas{
+    max-width: 60%;
+    height: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-areas:
+    "visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo"
+    "educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo"
+    "dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios"    
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2"
+    "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2"
+    "imagen5 imagen6 imagen3 imagen3 imagen2 imagen2"
+    "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2"
+    "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2"
+    "imagen5 imagen6 imagen4 imagen4 imagen2 imagen2"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "reservas reservas reservas reservas reservas reservas"
+    ;
+}
+
+.visitas-educativas-subtitulo{
+    grid-area: visitas-educativas-subtitulo;
+    justify-self: center;
+    align-self: center;
+}
+
+.visitas-educativas-subtitulo h2{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 35px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.educacion-parrafo{
+    grid-area: educacion-parrafo;
+    justify-self: center;
+    align-self: center;
+}
+
+.educacion-parrafo p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.educacion-parrrafo-1{
+    padding-top: 20px;
+}
+
+.dias-horarios{
+    grid-area: dias-horarios;
+    width: fit-content;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dias-horarios p{
+    background-color: #829460;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 16px;
+    border-radius: 10px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 4px 3px #FFE1E1 inset;
+    padding: 8px 40px;
+}
+
+.reservas{
+    grid-area: reservas;
+    width: fit-content;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reservas p{
+    background-color: #829460;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 16px;
+    border-radius: 10px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 4px 3px #FFE1E1 inset;
+    padding: 8px 8px;
+}
+
+.reservas a{
+    text-decoration: none;
+}
+
+.reservas-hover:hover{color: #FFE1E1;}
+
+
+.imagen1{
+    grid-area: imagen1;
+}
+.imagen1 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.imagen1 {
+	-webkit-animation: imagen1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen1 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(-1000px);
+            transform: translateY(-1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen1 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(-1000px);
+            transform: translateY(-1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen2{
+    grid-area: imagen2;
+}
+
+.imagen2 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid black;
+}
+
+.imagen2 {
+	-webkit-animation: imagen2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen2 {
+    0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen2 {
+    0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+
+.imagen3{
+    grid-area: imagen3;
+}
+
+.imagen3 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+.imagen3 {
+	-webkit-animation: imagen3 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen3 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen3 {
+    0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen3 {
+    0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.imagen4{
+    grid-area: imagen4;
+}
+
+.imagen4 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.imagen4 {
+	-webkit-animation: imagen4 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen4 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen4 {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen4 {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.imagen5{
+    grid-area: imagen5;
+}
+
+.imagen5 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+}
+
+.imagen5 {
+	-webkit-animation: imagen5 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen5 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen5 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen5 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen6{
+    grid-area: imagen6;
+}
+
+.imagen6 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+.imagen6 {
+	-webkit-animation: imagen6 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen6 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen6 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen6 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen7{
+    grid-area: imagen7;
+}
+
+.imagen7 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.imagen7 {
+	-webkit-animation: imagen7 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen7 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen7 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(1000px);
+            transform: translateY(-1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen7 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(1000px);
+            transform: translateY(-1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen8{
+    grid-area: imagen8;
+}
+
+.imagen8 img{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.imagen8 {
+	-webkit-animation: imagen8 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen8 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen8 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(1000px);
+            transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen8 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(1000px);
+            transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+
+
+.imagen9{
+    grid-area: imagen9;
+}
+
+.imagen9 img{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.imagen9 {
+	-webkit-animation: imagen9 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen9 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen9 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(-1000px);
+            transform: translateY(1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen9 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(-1000px);
+            transform: translateY(1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+}
+}
+
+.texto-imagen{
+    grid-area: texto-imagen;
+    background-color: #829460;
+    box-shadow: black 2px 2px 25px inset;
+}
+
+.texto-imagen p{
+    color:#ffe1e1;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 550; 
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 3px 4px 3px black;
+}
+
+.texto-imagen {
+	-webkit-animation: texto-imagen 2.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: texto-imagen 2.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes texto-imagen {
+    0% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+  @keyframes texto-imagen {
+    0% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+/* ------------------------------------------------------------- 
+Termina CSS pagina VISITAS-EDCUATIVAS 
+---------------------------------------------------------------*/
+
+
 /* ------------------------------------------------------------- 
 Comienza CSS FOOTER 
 ---------------------------------------------------------------*/
