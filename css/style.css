@@ -144,6 +144,37 @@ Comienza CSS pagina INDEX
     text-align: center;
     text-shadow: 2px 0px 3px black;
 }
+
+
+.bienvenida {
+	-webkit-animation: bienvenida 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: bienvenida 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes bienvenida {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes bienvenida {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
 /*--------- Termina CSS Imagen de portada + Titulo* ---------*/
 
 /*--------- Comienza CSS presentacion --------- */
@@ -194,6 +225,96 @@ Comienza CSS pagina INDEX
     border-color:  black;
     outline: 3px solid #FFE1E1;
     margin-bottom: 20px;
+}
+
+.quienes-somos-subtitulo {
+	-webkit-animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes quienes-somos-subtitulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes quienes-somos-subtitulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.quienes-somos-bienvenida  {
+	-webkit-animation: quienes-somos-bienvenida 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: quienes-somos-bienvenida  1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes quienes-somos-bienvenida{
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes quienes-somos-bienvenida {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.quienes-somos-presentacion  {
+	-webkit-animation: quienes-somos-presentacion 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: quienes-somos-presentacion  1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes quienes-somos-presentacion{
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes quienes-somos-presentacion {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
 }
 /*--------- Termina CSS presentacion ---------*/
 
@@ -307,6 +428,66 @@ Comienza CSS pagina INDEX
 }
 
 .etapas-trabajo a:hover{color: #FFE1E1; font-weight:700}
+
+.nuestro-trabajo-titulo {
+	-webkit-animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes nuestro-trabajo-titulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes nuestro-trabajo-titulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.container-etapas-trabajo {
+	-webkit-animation: container-etapas-trabajo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: container-etapas-trabajo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes container-etapas-trabajo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes container-etapas-trabajo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
 /*--------- Termina CSS Trabajo ---------*/
 
 /*--------- Comienza CSS El Equipo ---------*/
@@ -585,6 +766,117 @@ Comienza CSS pagina DONACIONES
 }
 
 .donaciones-contenido-texto a:hover{color: #FFE1E1;}
+
+
+.donaciones-contenido-texto{
+	-webkit-animation: donaciones-contenido-texton 1.1s both;
+    animation: donaciones-contenido-texto 1.1s both;
+}
+
+@-webkit-keyframes donaciones-contenido-texto{
+    0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+    }
+    38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    }
+    55% {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    81% {
+    -webkit-transform: translateX(32px);
+            transform: translateX(32px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    95% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+}
+  @keyframes donaciones-contenido-texto{
+    0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+    }
+    38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    }
+    55% {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    81% {
+    -webkit-transform: translateX(32px);
+            transform: translateX(32px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    95% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+}
 /* ------------------------------------------------------------- 
 Termina CSS pagina DONACIONES 
 ---------------------------------------------------------------*/
