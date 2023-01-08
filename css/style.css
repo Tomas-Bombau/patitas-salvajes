@@ -13,7 +13,7 @@ font-family: 'Oxygen', sans-serif;
 */
 
 /* ------------------------------------------------------------- 
-                        Comienza CSS HEADER 
+Comienza CSS HEADER 
 ---------------------------------------------------------------*/
 .nav-bar{
     background-color: #829460;
@@ -86,14 +86,13 @@ font-family: 'Oxygen', sans-serif;
     width: 50px
 }
 /* ------------------------------------------------------------- 
-                        Termina CSS HEADER 
+Termina CSS HEADER 
 ---------------------------------------------------------------*/
 
 
 /* ------------------------------------------------------------- 
-                    Comienza CSS pagina INDEX 
+Comienza CSS pagina INDEX 
 ---------------------------------------------------------------*/
-
 /* --------- Comienza CSS Imagen de portada + Titulo* ---------*/
 .portada-patitas-salvajes{
     background-image: url(../assets/index/group-of-dogs.jpg);
@@ -360,12 +359,12 @@ font-family: 'Oxygen', sans-serif;
 /*--------- Termina CSS El Equipo ---------*/
 
 /* ------------------------------------------------------------- 
-                    Termina CSS pagina INDEX 
+Termina CSS pagina INDEX 
 ---------------------------------------------------------------*/
 
 
 /* ------------------------------------------------------------- 
-                    Comienza CSS pagina ADOPTA 
+Comienza CSS pagina ADOPTA 
 ---------------------------------------------------------------*/
 .adopciones{
     background-image: url(../assets/adopta/adopciones-portada.jpg);
@@ -498,13 +497,101 @@ a.perros-en-adopcion-link-2:hover, a.perros-en-adopcion-link-2:active{color: #FF
     color: #EB455F;
 }
 /* ------------------------------------------------------------- 
-                    Termina CSS pagina ADOPTA 
+Termina CSS pagina ADOPTA 
 ---------------------------------------------------------------*/
 
 
-/* -------------------------------------- 
+/* ------------------------------------------------------------- 
+Comienza CSS pagina DONACIONES 
+---------------------------------------------------------------*/
+.donaciones{
+    background-image: url(../assets/donaciones/donaciones-portada.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 600px;
+}
+
+.donaciones h1{
+    color: white;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    text-shadow: 2px 0px 3px black;
+}
+
+.container-donaciones{
+    background-color: white;;
+    height: 1600px;
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.donaciones-contenido{
+    display: flex;
+    flex-direction: row;
+}
+
+.donaciones-contenido img{
+    width: 350px;
+    height: 250px;
+    border-style: outset;
+}
+
+.donaciones-contenido-texto{
+    align-self: center;
+    padding: 0px 40px;
+}
+
+.donaciones-contenido-texto h2{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+    text-align: left;
+}
+
+.donaciones-contenido-texto p{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px 0px;
+}
+
+.donar p{
+    padding: 10px 0px;
+}
+
+.donar p a{
+    background-color: #829460;
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.donaciones-contenido-texto a:hover{color: #FFE1E1;}
+/* ------------------------------------------------------------- 
+Termina CSS pagina DONACIONES 
+---------------------------------------------------------------*/
+
+/* ------------------------------------------------------------- 
 Comienza CSS pagina ELREFUGIO 
----------------------------------------*/
+---------------------------------------------------------------*/
 .el-refugio{
     background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
     background-repeat: no-repeat;
@@ -715,13 +802,12 @@ Comienza CSS pagina ELREFUGIO
     color: black;
     padding: 10px 0px;
 }
-
 /* ------------------------------------------------------------- 
 Termina CSS pagina ELREFUGIO 
 ---------------------------------------------------------------*/
 
 /* ------------------------------------------------------------- 
-                    Comienza CSS FOOTER 
+Comienza CSS FOOTER 
 ---------------------------------------------------------------*/
 .footer{
     background-image: linear-gradient(to right bottom, #9db176, #9caf75, #9bad74, #99ac74, #98aa73, #96a871, #93a56f, #91a36d, #8d9f6a, #899b66, #869863, #829460);
@@ -871,5 +957,5 @@ Termina CSS pagina ELREFUGIO
 } 
 
 /* ------------------------------------------------------------- 
-                    Termina CSS Footer 
+Termina CSS Footer 
 ---------------------------------------------------------------*/
