@@ -49,6 +49,11 @@ Comienza CSS HEADER
     padding: 10px 20px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown:hover {
     background-color: #FFE1E1;;
 }
@@ -84,6 +89,21 @@ Comienza CSS HEADER
 .redes-sociales img{
     height: 50px;
     width: 50px
+}
+@media(max-width: 800px){
+.redes-sociales{
+    display: none;
+}
+
+.nav-bar-logo-patitas-salvajes{
+    display: none;
+}
+
+.menu-navegacion li a{
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
 }
 /* ------------------------------------------------------------- 
 Termina CSS HEADER 
@@ -813,9 +833,13 @@ a.perros-en-adopcion-link-2:hover, a.perros-en-adopcion-link-2:active{color: #FF
 }
 
 @media(max-width:520px) {
+.adopciones{
+    height: 300px;
+}
+
 .adopciones h1{
     font-size: 35px;
-    }
+}
 
 .adopciones-presentacion{
     max-width: 90%;
@@ -1438,6 +1462,10 @@ Comienza CSS pagina ELREFUGIO
     "refugio-jardin"
     "refugio-casitas";
     }
+
+.el-refugio{
+    height: 450px;
+}
 }
 
 @media(max-width:500px){
@@ -1462,7 +1490,7 @@ Comienza CSS pagina ELREFUGIO
     background-position: center;
     background-size: 100%;
     position: relative;
-    height: 400px;
+    height: 350px;
 }
 }
 
@@ -2314,6 +2342,10 @@ h1{
     "reservas"
     ;
 }
+
+.visitas-educativas{
+    height: 350px;
+}
 }
 
 @media(max-width: 450px){
@@ -2337,12 +2369,7 @@ h1{
 }
 
 .visitas-educativas{
-    background-image: url(../assets/actividades-escolares/actividad-escolar-portada.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    height: 380px;
+    height: 250px;
 }
 
 h1{
