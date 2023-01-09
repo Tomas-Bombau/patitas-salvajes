@@ -500,10 +500,10 @@ Comienza CSS pagina INDEX
 
 .el-equipo h2{
     color: black;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: bold; 
-    font-size: 35px;
     text-align: center;
+    font-weight: 700; 
+    font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
     padding: 20px 0px;
 }
 
@@ -516,27 +516,38 @@ Comienza CSS pagina INDEX
     padding-bottom: 20px;
 }
 
+.card-text{
+    background-color: rgb(255, 225, 225, 0.8);
+    border: 1px solid black;
+    margin-top: -4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgb(130, 148, 96, 0.6);
+}
+
 .container-el-equipo h3{
     color: black;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: bold; 
-    font-size: 25px;
     text-align: center;
+    font-weight: 550; 
+    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .container-el-equipo p{
     color: black;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 14px;
     text-align: center;
+    font-weight: 500; 
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .container-el-equipo img{
     width: 350px;
     height: 250px;
-    border-style: groove;
-    border-color:  #829460;
-}
+    border: 1px solid black;
+} 
 /*--------- Termina CSS El Equipo ---------*/
 
 /* ------------------------------------------------------------- 
@@ -677,6 +688,189 @@ a.perros-en-adopcion-link-2:hover, a.perros-en-adopcion-link-2:active{color: #FF
 .perro:hover{
     color: #EB455F;
 }
+
+.container-testimonio{
+    margin: 80px 0px 40px;
+}
+
+.container-testimonio h2{
+    text-align: center;
+    font-weight: 700; 
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 0px 3px white;
+    letter-spacing: 3px;
+    padding: 10px 0px;
+    width: 600px;
+    border-style: double;
+    border-bottom: none;
+    background-image: url(../assets/adopta/fondo-testimonio.jpg);
+    background-size: contain;
+    margin: auto;
+}
+
+.testimonio{
+    margin: auto;
+    width: 600px;
+    height: 400px;
+}
+
+.testimonios{
+    border-style: double;
+}
+
+.testimonios img{
+    opacity: 0.8;
+}
+
+.testimonios h3{
+    font-weight: 550; 
+    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    background-color: rgb(130, 148, 97, 0.6);
+    width: fit-content;
+    text-align: center;
+}
+
+.testimonios p{
+    font-weight: 550; 
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif;
+    background-color: rgb(130, 148, 97, 0.6);
+    color: white;
+}
+
+@media(max-width:1300px) {
+.adopciones h1{
+    font-weight: 700; 
+    font-size: 60px;
+    top: 55%;
+    left: 50%;
+}
+
+.adopciones-presentacion h2{
+    font-weight: 550; 
+    font-size: 30px;
+}
+
+.adopciones-presentacion p{
+    font-weight: 500; 
+    font-size: 14px;
+}
+
+.adopciones-presentacion-contacto{
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.container-perros-en-adopcion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.perros-en-adopcion img{
+    width: 300px;
+    height: 200px;
+}
+
+.perros-en-adopcion h3{
+    font-weight: 600; 
+    font-size: 20px;
+}
+}
+
+@media(max-width:768px) {
+.adopciones{
+    height: 400px;
+}
+
+.adopciones h1{
+    font-size: 50px;
+}
+
+.adopciones-presentacion{
+    max-width: 80%;
+}
+
+.container-testimonio h2{
+    width: 500px;
+}
+
+.testimonio{
+    width: 500px;
+    height: 350px;
+}
+
+.testimonios h3{
+    font-size: 25px;
+}
+
+.testimonios p{
+    font-size: 14px;
+}
+}
+
+@media(max-width:520px) {
+.adopciones h1{
+    font-size: 35px;
+    }
+
+.adopciones-presentacion{
+    max-width: 90%;
+}
+
+.adopciones-presentacion-contacto{
+    height: 80px;
+}
+
+.adopciones h1{
+    font-size: 50px;
+}
+
+.container-testimonio h2{
+    width: 390px;
+}
+
+.testimonio{
+    width: 390px;
+    height: 250px;  
+}
+
+.testimonios h3{
+    font-size: 25px;
+}
+
+.testimonios p{
+    font-size: 14px;
+}
+}
+
+@media(max-width:390px){
+.adopciones-presentacion{
+    max-width: 100%;
+}
+
+.container-testimonio h2{
+    width: 300px;
+}
+
+.testimonio{
+    width: 300px;
+    height: 200px;
+}
+
+.testimonios h3{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.testimonios p{
+    font-size: 10px;
+}
+}
+
 /* ------------------------------------------------------------- 
 Termina CSS pagina ADOPTA 
 ---------------------------------------------------------------*/
@@ -1814,6 +2008,96 @@ Comienza CSS FOOTER
     padding: 20px 0px 20px 0px;
 } 
 
+
+@media(max-width:1200px) {
+    .container-formulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+    .mapa{
+    display: none;
+    }
+
+    .fila{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .place{
+    justify-content: center;
+    margin: 0px;
+    }
+
+    .mail{
+    justify-content: center;
+    }
+
+    .phone{
+    justify-content: center;
+    }
+
+    .formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .datos-personales-relleno{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    }
+
+    .datos-personales-relleno input{
+    border: 1px solid black;
+    width: 300px;
+    }
+
+    .motivo-de-contacto-titulo{
+    text-align: center;
+    }
+
+    .motivo-contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0;
+    justify-content: space-between;
+    gap: 0px;
+    padding-top: 20px;
+    align-content: center;
+    }
+
+    .motivo-contacto input{
+    justify-self: center;
+    }
+
+    .mensaje-contacto{
+    padding-top: 20px;
+    justify-content: center;
+    }
+
+    .mensaje-contacto input{
+    height: 200px;
+    width: 300px;
+    }
+
+.enviar-limpiar-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    }
+
+.datos-final{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    }
+}
 /* ------------------------------------------------------------- 
 Termina CSS Footer 
 ---------------------------------------------------------------*/
