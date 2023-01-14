@@ -1,0 +1,200 @@
+.visitas-educativas{
+    background-image: url(../assets/actividades-escolares/actividad-escolar-portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 600px;
+    h1{
+        color: white;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 60%;
+        left: 50%;
+        font-family: $titulos-subtitulos-font;
+        font-weight: bold; 
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 2px 0px 3px black;
+    }
+}
+
+.container-visitas-educativas{
+    @include grid (none,none, repeat (6,1 fr), repeat (18, 1 fr));
+    max-width: 60%;
+    height: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    "visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo"
+    "educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo"
+    "dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios"    
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2"
+    "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2"
+    "imagen5 imagen6 imagen3 imagen3 imagen2 imagen2"
+    "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2"
+    "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2"
+    "imagen5 imagen6 imagen4 imagen4 imagen2 imagen2"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "reservas reservas reservas reservas reservas reservas";
+    .visitas-educativas-subtitulo{
+        grid-area: visitas-educativas-subtitulo;
+        justify-self: center;
+        align-self: center;
+        h2{
+            color: black;
+            font-family: $titulos-subtitulos-font;
+            font-weight: bold; 
+            font-size: 35px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+    }
+    .educacion-parrafo{
+        grid-area: educacion-parrafo;
+        justify-self: center;
+        align-self: center;
+        p{
+            font-family: $p-font;
+            font-size: 15px;
+            text-align: center;
+        }
+        .educacion-parrrafo-1{
+        padding-top: 20px;
+        }
+    }
+    .dias-horarios{
+        grid-area: dias-horarios;
+        width: fit-content;
+        justify-self: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p{
+            background-color: $green-color;
+            color: white;
+            font-family: $p-font;
+            font-weight: bold; 
+            font-size: 15px;
+            border-radius: 10px;
+            border: black 1px solid;
+            box-shadow: 0px 0px 4px 3px $pink-color inset;
+            padding: 8px 40px;
+        }
+    }
+    .reservas{
+        grid-area: reservas;
+        @extend .dias-horarios;
+        a{
+            text-decoration: none;
+            &:hover{
+                color: $pink-color;
+            }
+        }
+    }
+    .imagen1{
+        grid-area: imagen1;
+        img{
+            padding: 2px;
+            height: 100%;
+            width: 100%;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+        }
+    }
+    .imagen2{
+        grid-area: imagen2;
+        img{
+            padding: 2px;
+            height: 100%;
+            width: 100%;
+            border-right: 2px solid black;
+        }
+    }
+    .imagen3{
+        grid-area: imagen3;
+        img{
+            padding: 2px;
+            height: 100%;
+            width: 100%;
+            border-top: 2px solid black;
+        }
+    }
+    .imagen4{
+        grid-area: imagen4;
+        img{
+            padding: 2px;
+            height: 100%;
+            width: 100%;
+            border-bottom: 2px solid black;
+        }
+    }
+    .imagen5{
+        grid-area: imagen5;
+        img{
+            padding: 2px;
+            height: 100%;
+            width: 100%;
+            border-left: 2px solid black;
+        }
+    }
+    .imagen6{
+        grid-area: imagen6;
+        img{
+            padding: 2px;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .imagen7{
+        grid-area: imagen7;
+        img{
+        padding: 2px;
+        height: 100%;
+        width: 100%;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        }
+    }
+    .imagen8{
+        grid-area: imagen8;
+        img{
+        height: 100%;
+        width: 100%;
+        padding: 2px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        }
+    }
+    .imagen9{
+        grid-area: imagen9;
+        img{
+        height: 100%;
+        width: 100%;
+        padding: 2px;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        }
+    }
+    .texto-imagen{
+        grid-area: texto-imagen;
+        background-color: #829460;
+        box-shadow: black 2px 2px 25px inset;
+        p{
+            color: $pink-color;
+            font-family: $p-font;
+            font-weight: bold; 
+            font-size: 35px;
+            text-align: center;
+            padding-top: 20px;
+            text-shadow: 3px 4px 3px black;
+        }
+    }
+}

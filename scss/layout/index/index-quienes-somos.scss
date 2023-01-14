@@ -1,0 +1,121 @@
+.quienes-somos{
+    background-color: $green-color;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+    .quienes-somos-subtitulo{
+        -webkit-animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @-webkit-keyframes quienes-somos-subtitulo {
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+          @keyframes quienes-somos-subtitulo {
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+        h2{
+            color: white;
+            font-family: $titulos-subtitulos-font;
+            font-weight: bold; 
+            font-size: 35px;
+            text-align: center;
+            padding: 20px 0px;
+        }
+    }
+    .quienes-somos-bienvenida{
+        -webkit-animation: quienes-somos-bienvenida 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: quienes-somos-bienvenida  1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @-webkit-keyframes quienes-somos-bienvenida{
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+          @keyframes quienes-somos-bienvenida {
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+        h3{
+            color: white;
+            font-family: $p-font;
+            font-weight: bold; 
+            font-size: 25px;
+            text-align: left;
+            padding: 10px 30px ;
+        }
+    }
+    .quienes-somos-presentacion{
+        @include flex (row, space-evenly, none, wrap);
+        -webkit-animation: quienes-somos-presentacion 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: quienes-somos-presentacion  1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @-webkit-keyframes quienes-somos-presentacion{
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+            @keyframes quienes-somos-presentacion {
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+        p{
+            color: white;
+            font-family: $p-font;
+            font-size: 15px;
+            text-align: justify;
+            padding: 10px 0px;
+            width: 700px;
+        }
+        img{
+            border-style: groove;
+            border-color:  black;
+            outline: 3px solid $pink-color;
+            margin-bottom: 20px;
+        }
+    }
+}

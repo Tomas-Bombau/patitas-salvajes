@@ -1,0 +1,76 @@
+.portada-patitas-salvajes{
+    background-image: url(../assets/index/group-of-dogs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 1000px;
+    h1{
+        color: white;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 70%;
+        left: 50%;
+        font-family: $titulos-subtitulos-font;
+        font-weight: bold; 
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 2px 0px 3px black;
+    }
+    h2{
+        color: white;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 75%;
+        left: 50%;
+        font-family: $titulos-subtitulos-font;
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center;
+        text-shadow: 2px 0px 3px black;
+    }
+    p{
+        color: #FFE1E1;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 62%;
+        left: 50%;
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold; 
+        font-size: 80px;
+        text-align: center;
+        text-shadow: 2px 0px 3px black;
+    }
+    .bienvenida {
+        -webkit-animation: bienvenida 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: bienvenida 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    
+    @-webkit-keyframes bienvenida {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes bienvenida {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+}

@@ -1,0 +1,113 @@
+.footer{
+    background-image: linear-gradient(to right bottom, #9db176, #9caf75, #9bad74, #99ac74, #98aa73, #96a871, #93a56f, #91a36d, #8d9f6a, #899b66, #869863, #829460);
+    h2{
+        color: white;
+        font-family: $p-font;
+        font-weight: bolder; 
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .container-formulario{
+        @include flex (row,center,none,wrap) ;
+        gap: 40px;
+        .mapa{
+            width: 600px;
+            height: 335px;
+        }
+        .fila{
+            @include flex (row,space-between,none,wrap) ;
+            padding-bottom: 20px;
+            p{
+                color: white;
+                font-family: $p-font;
+                font-size: 15px;
+                text-align: left;
+                padding-top: 5px;
+                padding-left: 10px;
+            }
+            img{
+                width: 25px;
+                height: 25px;
+            }
+            .place{
+                display: flex;
+            }
+            .mail{
+                display: flex;
+                img{
+                    margin-top: 2px;
+                }
+            }
+            .phone{
+                display: flex;
+            }
+        }
+        .formulario{
+            .datos-personales-relleno{
+                @include flex (row, space-between, none, wrap);
+                input{
+                    background-color: #EEEEEE;
+                    height: 20px;
+                    font-family: $p-font;
+                    font-size: 12px;
+                    text-align: left;
+                    border: none;
+                    padding-right: 120px;
+                }
+            }
+            .motivo-de-contacto-titulo{
+                color: white;
+                font-family: $p-font;
+                font-weight: bold; 
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            .motivo-contacto{
+                @include flex (row, space-between, none, wrap);
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 25px;
+                gap: 30px;
+                label{
+                    font-family: $p-font;
+                    font-size: 14px;
+                    text-align: left;
+                    border: none;
+                }
+            }
+            .mensaje-contacto{
+                @include flex (row,none,none,wrap);
+                input{
+                    background-color: #EEEEEE;
+                    height: 100px;
+                    width: 1100px;
+                    font-size: 14px;
+                    text-align: center; 
+                    border: none;
+                }
+            }
+            .enviar-limpiar-form{
+                @include flex (row,center,none,wrap);
+                gap: 30px;
+                input{
+                    background-color: #EEEEEE;
+                    border: none;
+                    font-size: 15px;
+                    border: 4px solid #ffe1e1;
+                    margin-top: 20px;
+                    padding: 5px;
+                    &:hover{color:black; background-color: #FFE1E1; transform: scale(1.1);}
+                    &:active{color: red;}
+                }
+            }
+        }
+        .datos-final{
+            color: white;
+            font-size: 14px;
+            text-align: right;
+            padding: 20px 0px 20px 0px;
+        }
+    }
+}

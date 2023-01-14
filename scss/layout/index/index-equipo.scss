@@ -1,0 +1,46 @@
+.el-equipo{
+    background-color: white;;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+    h2{
+        color: black;
+        font-family: $titulos-subtitulos-font;
+        font-weight: bold; 
+        font-size: 35px;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .container-el-equipo{
+        @include flex (row, space-evenly, none, wrap);
+        row-gap: 20px;
+        padding-bottom: 20px;
+        .cards{
+            &:hover{box-shadow: 0 8px 16px 0 rgb(130, 148, 96);}
+            h3{
+                color: black;
+                font-family: $p-font;  
+                font-weight: bold; 
+                font-size: 25px;  
+                text-align: center;
+            }
+            img{
+                width: 350px;
+                height: 250px;
+                border: 1px solid black;
+            }
+            p{
+                color: black;
+                font-family: $p-font;  
+                font-size: 15px;
+                text-align: center;
+            }
+            .card-text{
+                background-color: $pink-color;
+                border: 1px solid black;
+                margin-top: -4px;
+                box-shadow: 0 4px 8px 0 black;
+            }
+        }
+    }
+}

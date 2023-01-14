@@ -1,0 +1,2642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Oxygen:wght@300;400;700&display=swap');
+
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Oxygen', sans-serif;
+'Dancing Script', cursive;
+*/
+
+/* ------------------------------------------------------------- 
+Comienza CSS HEADER 
+---------------------------------------------------------------*/
+.nav-bar{
+    background-color: #829460;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-logo-patitas-salvajes{
+    padding: 0px 0px 0px 40px;
+}
+
+.nav-bar-logo-patitas-salvajes img{
+    width: 50px;
+    height: 50px;
+}
+
+.menu-navegacion {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 8px 0px 0px 0px;
+}
+
+.menu-navegacion li a{
+    display: inline-block;
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover {
+    background-color: #FFE1E1;
+}
+
+.dropdown-content {
+    background-color:#829460;
+    width: 170px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: left;
+    padding: 12px 16px;
+}
+
+.dropdown-content a:hover {background-color: #FFE1E1; width: 100%;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.redes-sociales{
+    padding: 0px 40px 0px 0px;
+}
+
+.redes-sociales img{
+    height: 50px;
+    width: 50px;
+}
+@media(max-width: 800px){
+.redes-sociales{
+    display: none;
+}
+
+.nav-bar-logo-patitas-salvajes{
+    display: none;
+}
+
+.menu-navegacion li a{
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+}
+/* ------------------------------------------------------------- 
+Termina CSS HEADER 
+---------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------- 
+Comienza CSS pagina INDEX 
+---------------------------------------------------------------*/
+/* --------- Comienza CSS Imagen de portada + Titulo* ---------*/
+.portada-patitas-salvajes{
+    background-image: url(../assets/index/group-of-dogs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 1000px;
+}
+
+.portada-patitas-salvajes h1{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.portada-patitas-salvajes h2{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.portada-patitas-salvajes p{
+    color: #FFE1E1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 62%;
+    left: 50%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold; 
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+
+.bienvenida {
+	-webkit-animation: bienvenida 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: bienvenida 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes bienvenida {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes bienvenida {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+/*--------- Termina CSS Imagen de portada + Titulo* ---------*/
+
+/*--------- Comienza CSS presentacion --------- */
+.quienes-somos{
+    background-color: #829460;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.quienes-somos-subtitulo h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.quienes-somos-bienvenida h3{
+    color: white;
+    font-family: 'Oxygen', sans-serif;  
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 30px ;
+}
+
+.quienes-somos-presentacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.quienes-somos-presentacion p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    text-align: justify;
+    padding: 10px 0px;
+    width: 700px;
+}
+
+.quienes-somos-presentacion img{ 
+    border-style: groove;
+    border-color:  black;
+    outline: 3px solid #FFE1E1;
+    margin-bottom: 20px;
+}
+
+.quienes-somos-subtitulo {
+	-webkit-animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: quienes-somos-subtitulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes quienes-somos-subtitulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes quienes-somos-subtitulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.quienes-somos-bienvenida  {
+	-webkit-animation: quienes-somos-bienvenida 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: quienes-somos-bienvenida  1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes quienes-somos-bienvenida{
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes quienes-somos-bienvenida {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.quienes-somos-presentacion  {
+	-webkit-animation: quienes-somos-presentacion 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: quienes-somos-presentacion  1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes quienes-somos-presentacion{
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes quienes-somos-presentacion {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+/*--------- Termina CSS presentacion ---------*/
+
+/*--------- Comienza CSS Nuestra Mision ---------*/
+.nuestra-mision{
+    background-color: white;;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.nuestra-mision h2{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container-misiones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.misiones{
+    width: 33%;
+}
+
+.misiones img{
+    width: 20px;
+    height: 20px;
+}
+
+.misiones h3{
+    color: black;   
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.misiones p{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500; 
+    font-size: 14px;
+    text-align: center; 
+    padding: 0px 10px 20px 10px;
+}
+/*--------- Termina CSS Nuestra Mision ---------*/
+
+/*--------- Comienza CSS Trabajo ---------*/
+.nuestro-trabajo{
+    background-color:#829460;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.nuestro-trabajo-titulo h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container-etapas-trabajo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.etapas-trabajo{
+    width: 33%;
+    text-align: center; 
+}
+
+.etapas-trabajo h3{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.etapas-trabajo img{
+    width: 300px;
+    height: 200px;
+    border-radius: 200px 100px;
+    border-style: ridge;
+    outline: 3px solid #FFE1E1;
+}
+
+.etapas-trabajo p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    padding: 0px 20px 20px; 
+}
+
+.etapas-trabajo a{
+    text-decoration: none;
+}
+
+.etapas-trabajo a:hover{color: #FFE1E1; font-weight:700}
+
+.nuestro-trabajo-titulo {
+	-webkit-animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes nuestro-trabajo-titulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes nuestro-trabajo-titulo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.container-etapas-trabajo {
+	-webkit-animation: container-etapas-trabajo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: container-etapas-trabajo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes container-etapas-trabajo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes container-etapas-trabajo {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+/*--------- Termina CSS Trabajo ---------*/
+
+/*--------- Comienza CSS El Equipo ---------*/
+.el-equipo{
+    background-color: white;;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.el-equipo h2{
+    color: black;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 20px 0px;
+}
+
+.container-el-equipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.card-text{
+    background-color: rgb(255, 225, 225, 0.8);
+    border: 1px solid black;
+    margin-top: -4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px 0 rgb(130, 148, 96, 0.6);
+}
+
+.container-el-equipo h3{
+    color: black;
+    text-align: center;
+    font-weight: 550; 
+    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container-el-equipo p{
+    color: black;
+    text-align: center;
+    font-weight: 500; 
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container-el-equipo img{
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+} 
+/*--------- Termina CSS El Equipo ---------*/
+
+/* ------------------------------------------------------------- 
+Termina CSS pagina INDEX 
+---------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------- 
+Comienza CSS pagina ADOPTA 
+---------------------------------------------------------------*/
+.adopciones{
+    background-image: url(../assets/adopta/adopciones-portada.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 600px;
+}
+
+.adopciones h1{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.adopciones-presentacion{
+    max-width: 60%;
+    margin: auto;
+}
+
+.adopciones-presentacion h2{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.adopciones-presentacion p{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.adopciones-presentacion a{
+    text-decoration: none;
+}
+
+.adopciones-presentacion-contacto{
+    background-color: #829460;
+    height: 30px;
+    width: fit-content;
+    margin: auto;
+    border: 2px black;
+    border-style: outset;
+    box-shadow: 0px 4px 5px black;
+    margin-bottom: 30px;
+}
+
+.adopciones-presentacion-contacto p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+.container-adopciones p em{
+    font-size: 14px;
+}
+
+a.perros-en-adopcion-link:hover, a.perros-en-adopcion-link:active{color: #90A17D; font-weight: bolder;}
+a.perros-en-adopcion-link-2:hover, a.perros-en-adopcion-link-2:active{color: #FFE1E1; font-weight: bolder;}
+
+.container-perros-en-adopcion{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.perros-en-adopcion img{
+    display: block;
+    width: 375px;
+    height: 250px;
+    border-radius: 20px;
+    border-style: outset;
+    border-color: #829460  ;
+}
+
+.perros-en-adopcion{
+    position: relative;
+}
+
+.perros-en-adopcion a{
+    text-decoration:none;
+}
+
+.perros-en-adopcion-nombre-edad{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    text-align: center;
+}
+
+.perros-en-adopcion .perro{
+    color: black;
+    font-weight: bold; 
+    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.perros-en-adopcion:hover img{
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.perros-en-adopcion:hover .perros-en-adopcion-nombre-edad{
+    opacity: 1;
+    transition: 2s ease;
+}
+
+.perro:hover{
+    color: #EB455F;
+}
+
+.container-testimonio{
+    margin: 80px 0px 40px;
+}
+
+.container-testimonio h2{
+    text-align: center;
+    font-weight: 700; 
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 0px 3px white;
+    letter-spacing: 3px;
+    padding: 10px 0px;
+    width: 600px;
+    border-style: double;
+    border-bottom: none;
+    background-image: url(../assets/adopta/fondo-testimonio.jpg);
+    background-size: contain;
+    margin: auto;
+}
+
+.testimonio{
+    margin: auto;
+    width: 600px;
+    height: 400px;
+}
+
+.testimonios{
+    border-style: double;
+}
+
+.testimonios img{
+    opacity: 0.8;
+}
+
+.testimonios h3{
+    font-weight: 550; 
+    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    background-color: rgb(130, 148, 97, 0.6);
+    width: fit-content;
+    text-align: center;
+}
+
+.testimonios p{
+    font-weight: 550; 
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif;
+    background-color: rgb(130, 148, 97, 0.6);
+    color: white;
+}
+
+@media(max-width:1300px) {
+.adopciones h1{
+    font-weight: 700; 
+    font-size: 60px;
+    top: 55%;
+    left: 50%;
+}
+
+.adopciones-presentacion h2{
+    font-weight: 550; 
+    font-size: 30px;
+}
+
+.adopciones-presentacion p{
+    font-weight: 500; 
+    font-size: 14px;
+}
+
+.adopciones-presentacion-contacto{
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.container-perros-en-adopcion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.perros-en-adopcion img{
+    width: 300px;
+    height: 200px;
+}
+
+.perros-en-adopcion h3{
+    font-weight: 600; 
+    font-size: 20px;
+}
+}
+
+@media(max-width:768px) {
+.adopciones{
+    height: 400px;
+}
+
+.adopciones h1{
+    font-size: 50px;
+}
+
+.adopciones-presentacion{
+    max-width: 80%;
+}
+
+.container-testimonio h2{
+    width: 500px;
+}
+
+.testimonio{
+    width: 500px;
+    height: 350px;
+}
+
+.testimonios h3{
+    font-size: 25px;
+}
+
+.testimonios p{
+    font-size: 14px;
+}
+}
+
+@media(max-width:520px) {
+.adopciones{
+    height: 300px;
+}
+
+.adopciones h1{
+    font-size: 35px;
+}
+
+.adopciones-presentacion{
+    max-width: 90%;
+}
+
+.adopciones-presentacion-contacto{
+    height: 80px;
+}
+
+.container-testimonio h2{
+    width: 390px;
+}
+
+.testimonio{
+    width: 390px;
+    height: 250px;  
+}
+}
+
+@media(max-width:390px){
+.adopciones-presentacion{
+    max-width: 100%;
+}
+
+.container-testimonio h2{
+    width: 300px;
+}
+
+.testimonio{
+    width: 300px;
+    height: 200px;
+}
+
+.testimonios h3{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.testimonios p{
+    font-size: 10px;
+}
+}
+
+/* ------------------------------------------------------------- 
+Termina CSS pagina ADOPTA 
+---------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------- 
+Comienza CSS pagina DONACIONES 
+---------------------------------------------------------------*/
+.donaciones{
+    background-image: url(../assets/donaciones/donaciones-portada.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 600px;
+}
+
+.donaciones h1{
+    color: white;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    text-shadow: 2px 0px 3px black;
+}
+
+.container-donaciones{
+    background-color: white;;
+    height: 1600px;
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.donaciones-contenido{
+    display: flex;
+    flex-direction: row;
+}
+
+.donaciones-contenido img{
+    width: 350px;
+    height: 250px;
+    border-style: outset;
+}
+
+.donaciones-contenido-texto{
+    align-self: center;
+    padding: 0px 40px;
+}
+
+.donaciones-contenido-texto h2{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+    text-align: left;
+}
+
+.donaciones-contenido-texto p{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px 0px;
+}
+
+.donar p{
+    padding: 10px 0px;
+}
+
+.donar p a{
+    background-color: #829460;
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.donaciones-contenido-texto a:hover{color: #FFE1E1;}
+
+
+.donaciones-contenido-texto{
+	-webkit-animation: donaciones-contenido-texton 1.1s both;
+    animation: donaciones-contenido-texto 1.1s both;
+}
+
+@-webkit-keyframes donaciones-contenido-texto{
+    0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+    }
+    38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    }
+    55% {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    81% {
+    -webkit-transform: translateX(32px);
+            transform: translateX(32px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    95% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+}
+  @keyframes donaciones-contenido-texto{
+    0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+    }
+    38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    }
+    55% {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    81% {
+    -webkit-transform: translateX(32px);
+            transform: translateX(32px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+    95% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    }
+}
+/* ------------------------------------------------------------- 
+Termina CSS pagina DONACIONES 
+---------------------------------------------------------------*/
+
+/* ------------------------------------------------------------- 
+Comienza CSS pagina ELREFUGIO 
+---------------------------------------------------------------*/
+.el-refugio{
+    background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 600px;
+}
+
+.el-refugio h1{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.container-el-refugio{
+    display: grid;
+    max-width: 60%;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-rows: 80px 1fr 50px 1fr 1fr 1fr ;
+    grid-template-areas:
+    "refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo" 
+    "refugio-1 refugio-1 refugio-1 refugio-1-imagen refugio-1-imagen"
+    "refugio-2 refugio-2 refugio-2 refugio-2 refugio-2"
+    "refugio-casona refugio-casona refugio-casona refugio-casona refugio-casona"
+    "refugio-jardin refugio-jardin refugio-jardin refugio-jardin refugio-jardin"
+    "refugio-casitas refugio-casitas refugio-casitas refugio-casitas refugio-casitas"
+    ;
+}
+
+.container-el-refugio h2{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 35px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.container-el-refugio h3{
+    font-weight: bold; 
+    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container-el-refugio p{
+    color: black; 
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+}
+
+.refugio-subtitulo{
+    grid-area: refugio-subtitulo;
+    height: 100%;
+    margin: 20px 0px;
+}
+
+.refugio-1{
+    grid-area: refugio-1;
+    height: 100%;
+}
+
+.refugio-1 p{
+    padding: 20px 50px 0px 30px;
+}
+
+.refugio-1-horario p{
+    background-color: #829460;
+    color: white;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 15px;
+    border-radius: 10px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 4px 3px #FFE1E1 inset;
+    margin: 65px 30px 0px;
+    padding: 5px 5px;
+}
+
+.refugio-1-imagen{
+    grid-area: refugio-1-imagen;
+    align-self: center;
+}
+
+.refugio-1-imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-style: ridge;
+    margin-top: 10px;
+}
+
+.refugio-1 a{
+    text-decoration: none;
+}
+
+.refugio-1 a:hover {color:#829460; font-weight:bold;}
+
+.refugio-2{
+    grid-area: refugio-2;
+    height: 5%;
+    align-self: center;
+    background-color: #829460;
+    opacity: 0.5;
+}
+
+.refugio-casona{
+    grid-area: refugio-casona;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.refugio-casona img{
+    border-radius: 20px;
+    border-style: ridge;
+    border-color: black;
+}
+
+.refugio-casona-texto{
+    max-width: 700px;
+}
+
+.refugio-casona-texto h3{
+    color: black;
+}
+
+.refugio-casona-texto p{
+    padding: 10px 0px;
+}
+
+.refugio-jardin{
+    grid-area: refugio-jardin;
+    background-color: #829460 ;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.refugio-jardin img{
+    border-radius: 20px;
+    border-style: ridge;
+    border-color: black;
+    outline: 2px solid #FFE1E1;
+}
+
+.refugio-jardin-texto{
+    max-width: 700px;
+}
+
+.refugio-jardin-texto h3{
+    color: white;
+}
+
+.refugio-jardin-texto p{
+    color: white;
+    padding: 10px 0px;
+}
+
+.refugio-jardin a{
+    text-decoration: none;
+}
+
+.refugio-jardin a:hover{color: #FFE1E1; font-weight: 700;}
+
+.refugio-casitas{
+    grid-area: refugio-casitas;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.refugio-casitas img{
+    border-radius: 20px;
+    border-style: ridge;
+    border-color: black;
+}
+
+.refugio-casitas-texto{
+    max-width: 700px;
+}
+
+.refugio-casitas-texto h3{
+    color: black;
+}
+
+.refugio-casitas-texto p{
+    color: black;
+    padding: 10px 0px;
+}
+
+
+@media(max-width:1500px){
+.el-refugio h1{
+    font-weight: 700; 
+    font-size: 40px;
+    top: 55%;
+    left: 50%;
+}
+
+.container-el-refugio{
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 200px 200px 600px 600px 600px;
+    grid-template-areas:
+    "refugio-subtitulo"
+    "refugio-1-imagen"
+    "refugio-1"
+    "refugio-casona"
+    "refugio-jardin"
+    "refugio-casitas";
+}
+
+.el-refugio h1{
+    color: white;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+.refugio-subtitulo{
+    display: none;
+}
+
+.refugio-1-imagen{
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.refugio-1-imagen img{
+    height: 200px;
+    width: 350px;
+}
+
+.refugio-1-texto{
+    text-align: center;
+    margin: 0px;
+}
+
+.refugio-1-horario p{
+    text-align: center;
+    margin: 30px 30px 0px;
+}
+
+    
+
+.refugio-casona{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.refugio-casona img{
+    height: 200px;
+    width: 350px;
+}
+
+.refugio-casona h3{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+.refugio-casona p{
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.refugio-jardin{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.refugio-jardin img{
+    height: 200px;
+    width: 350px;
+}
+
+.refugio-jardin h3{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.refugio-jardin p{
+    padding: 10px;
+    text-align: center;
+}
+
+.refugio-casitas{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.refugio-casitas img{
+    height: 200px;
+    width: 350px;
+}
+
+.refugio-casitas h3{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.refugio-casitas p{
+    padding: 10px;
+    text-align: center;
+}
+}
+
+@media(max-width:768px){
+.container-el-refugio{
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 200px 300px 600px 600px 600px;
+    grid-template-areas:
+    "refugio-subtitulo"
+    "refugio-1-imagen"
+    "refugio-1"
+    "refugio-casona"
+    "refugio-jardin"
+    "refugio-casitas";
+    }
+
+.el-refugio{
+    height: 450px;
+}
+}
+
+@media(max-width:500px){
+.container-el-refugio{
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 200px 400px 600px 600px 600px;
+    grid-template-areas:
+    "refugio-subtitulo"
+    "refugio-1-imagen"
+    "refugio-1"
+    "refugio-casona"
+    "refugio-jardin"
+    "refugio-casitas";
+}
+
+.el-refugio{
+    background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 350px;
+}
+}
+
+@media(max-width:400px){
+.container-el-refugio{
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 200px 500px 650px 650px 650px;
+    grid-template-areas:
+    "refugio-subtitulo"
+    "refugio-1-imagen"
+    "refugio-1"
+    "refugio-casona"
+    "refugio-jardin"
+    "refugio-casitas";
+}
+}
+
+@media(max-width:350px){
+.refugio-1-imagen img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+.refugio-casona img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+.refugio-jardin img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+.refugio-casitas img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+}
+/* ------------------------------------------------------------- 
+Termina CSS pagina ELREFUGIO 
+---------------------------------------------------------------*/
+
+
+
+/* -------------------------------------- 
+Comienza CSS pagina VISITAS EDCUATIVAS 
+---------------------------------------*/
+.visitas-educativas{
+    background-image: url(../assets/actividades-escolares/actividad-escolar-portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 600px;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 0px 3px black;
+}
+
+.container-visitas-educativas{
+    max-width: 60%;
+    height: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-areas:
+    "visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo visitas-educativas-subtitulo"
+    "educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo educacion-parrafo"
+    "dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios dias-horarios"    
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen7 imagen7"
+    "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2"
+    "imagen1 imagen1 imagen3 imagen3 imagen2 imagen2"
+    "imagen5 imagen6 imagen3 imagen3 imagen2 imagen2"
+    "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2"
+    "imagen5 imagen6 texto-imagen texto-imagen imagen2 imagen2"
+    "imagen5 imagen6 imagen4 imagen4 imagen2 imagen2"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "imagen9 imagen9 imagen4 imagen4 imagen8 imagen8"
+    "reservas reservas reservas reservas reservas reservas"
+    ;
+}
+
+.visitas-educativas-subtitulo{
+    grid-area: visitas-educativas-subtitulo;
+    justify-self: center;
+    align-self: center;
+}
+
+.visitas-educativas-subtitulo h2{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 35px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.educacion-parrafo{
+    grid-area: educacion-parrafo;
+    justify-self: center;
+    align-self: center;
+}
+
+.educacion-parrafo p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.educacion-parrrafo-1{
+    padding-top: 20px;
+}
+
+.dias-horarios{
+    grid-area: dias-horarios;
+    width: fit-content;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dias-horarios p{
+    background-color: #829460;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 16px;
+    border-radius: 10px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 4px 3px #FFE1E1 inset;
+    padding: 8px 40px;
+}
+
+.reservas{
+    grid-area: reservas;
+    width: fit-content;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reservas p{
+    background-color: #829460;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    border: black 1px solid;
+    box-shadow: 0px 0px 4px 3px #FFE1E1 inset;
+    padding: 8px 8px;
+}
+
+.reservas a{
+    text-decoration: none;
+}
+
+.reservas-hover:hover{color: #FFE1E1;}
+
+.imagen1{
+    grid-area: imagen1;
+}
+.imagen1 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.imagen1 {
+	-webkit-animation: imagen1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen1 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(-1000px);
+            transform: translateY(-1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen1 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(-1000px);
+            transform: translateY(-1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen2{
+    grid-area: imagen2;
+}
+
+.imagen2 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid black;
+}
+
+.imagen2 {
+	-webkit-animation: imagen2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen2 {
+    0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen2 {
+    0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+
+.imagen3{
+    grid-area: imagen3;
+}
+
+.imagen3 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+.imagen3 {
+	-webkit-animation: imagen3 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen3 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen3 {
+    0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen3 {
+    0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.imagen4{
+    grid-area: imagen4;
+}
+
+.imagen4 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.imagen4 {
+	-webkit-animation: imagen4 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen4 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen4 {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen4 {
+    0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.imagen5{
+    grid-area: imagen5;
+}
+
+.imagen5 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+}
+
+.imagen5 {
+	-webkit-animation: imagen5 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen5 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen5 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen5 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen6{
+    grid-area: imagen6;
+}
+
+.imagen6 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+.imagen6 {
+	-webkit-animation: imagen6 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen6 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen6 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen6 {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen7{
+    grid-area: imagen7;
+}
+
+.imagen7 img{
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.imagen7 {
+	-webkit-animation: imagen7 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen7 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen7 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(1000px);
+            transform: translateY(-1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen7 {
+    0% {
+    -webkit-transform: translateY(-1000px) translateX(1000px);
+            transform: translateY(-1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+
+.imagen8{
+    grid-area: imagen8;
+}
+
+.imagen8 img{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.imagen8 {
+	-webkit-animation: imagen8 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen8 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen8 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(1000px);
+            transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen8 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(1000px);
+            transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+
+
+.imagen9{
+    grid-area: imagen9;
+}
+
+.imagen9 img{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.imagen9 {
+	-webkit-animation: imagen9 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: imagen9 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes imagen9 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(-1000px);
+            transform: translateY(1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+    }
+}
+  @keyframes imagen9 {
+    0% {
+    -webkit-transform: translateY(1000px) translateX(-1000px);
+            transform: translateY(1000px) translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+}
+}
+
+.texto-imagen{
+    grid-area: texto-imagen;
+    background-color: #829460;
+    box-shadow: black 2px 2px 25px inset;
+}
+
+.texto-imagen p{
+    color:#ffe1e1;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 550; 
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 3px 4px 3px black;
+}
+
+.texto-imagen {
+	-webkit-animation: texto-imagen 2.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: texto-imagen 2.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes texto-imagen {
+    0% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+  @keyframes texto-imagen {
+    0% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+
+@media(max-width: 1575px){    
+.container-visitas-educativas{
+    height: 1700px;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 250px 100px 0px 350px 350px 350px 100px;
+    grid-template-areas:
+    "visitas-educativas-subtitulo"
+    "educacion-parrafo "
+    "dias-horarios "
+    "texto-imagen"
+    "imagen1"
+    "imagen3"
+    "imagen7" 
+    "reservas"
+    ;
+}
+
+.imagen1{
+    justify-self: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagen1 img{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.imagen2{
+display: none;
+}
+
+.imagen3{
+    justify-self: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagen3 img{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.imagen4{
+    display: none;
+}
+
+.imagen5{
+    display: none;
+}
+
+.imagen6{
+    display: none;
+}
+
+.imagen7{
+    justify-self: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagen7 img{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.imagen8{
+    display: none;
+}
+
+.imagen9{
+    display: none;
+}
+
+.texto-imagen{
+    display: none;
+}
+}
+
+@media(max-width:768px){
+.visitas-educativas{
+    background-image: url(../assets/actividades-escolares/actividad-escolar-portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 400px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.container-visitas-educativas{
+    height: 2600px;
+    max-width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 200px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas:
+    "visitas-educativas-subtitulo"
+    "educacion-parrafo "
+    "dias-horarios "
+    "texto-imagen"
+    "imagen1"
+    "imagen2"
+    "imagen3"
+    "imagen4"
+    "imagen7" 
+    "imagen9"
+    "reservas"
+    ;
+}
+
+.visitas-educativas-subtitulo{
+    text-align: center;
+    margin: 0px;
+}
+
+.imagen1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10% 10%;
+}
+
+.imagen2{
+    display: grid;
+}
+
+.imagen2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10% 10%;
+    border: none;
+}
+
+.imagen3 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10% 10%;
+}
+
+.imagen4{
+    display: grid;
+}
+
+.imagen4 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10% 10%;
+    border: none;
+}
+
+.imagen5{
+    display: none;
+}
+
+.imagen6{
+    display: none;
+}
+
+.imagen7 img{
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10% 10%;
+}
+
+.imagen8{
+    display: none;
+}
+
+.imagen9{
+    display: grid;
+}
+
+.imagen9 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10% 10%;
+    border: none;
+}
+
+.texto-imagen{
+    display: none;
+}
+}
+
+@media(max-width: 650px){
+.container-visitas-educativas{
+    height: 2700px;
+    max-width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 300px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas:
+    "visitas-educativas-subtitulo"
+    "educacion-parrafo "
+    "dias-horarios "
+    "texto-imagen"
+    "imagen1"
+    "imagen2"
+    "imagen3"
+    "imagen4"
+    "imagen7" 
+    "imagen9"
+    "reservas"
+    ;
+}
+}
+
+@media(max-width: 550px){
+.container-visitas-educativas{
+    height: 2700px;
+    max-width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 300px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas:
+    "visitas-educativas-subtitulo"
+    "educacion-parrafo "
+    "dias-horarios "
+    "texto-imagen"
+    "imagen1"
+    "imagen2"
+    "imagen3"
+    "imagen4"
+    "imagen7" 
+    "imagen9"
+    "reservas"
+    ;
+}
+
+.visitas-educativas{
+    height: 350px;
+}
+}
+
+@media(max-width: 450px){
+.container-visitas-educativas{
+    height: 2800px;
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 120px 350px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-areas:
+    "visitas-educativas-subtitulo"
+    "educacion-parrafo "
+    "dias-horarios "
+    "texto-imagen"
+    "imagen1"
+    "imagen2"
+    "imagen3"
+    "imagen4"
+    "imagen7" 
+    "imagen9"
+    "reservas"
+}
+
+.visitas-educativas{
+    height: 250px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+}
+
+@media(max-width: 320px){
+    .container-visitas-educativas{
+        height: 2800px;
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100px 380px 100px 0px 350px 350px 350px 350px 350px 350px 100px;
+        grid-template-areas:
+        "visitas-educativas-subtitulo"
+        "educacion-parrafo "
+        "dias-horarios "
+        "texto-imagen"
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen7" 
+        "imagen9"
+        "reservas"
+    }
+}
+/* ------------------------------------------------------------- 
+Termina CSS pagina VISITAS-EDCUATIVAS 
+---------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------- 
+Comienza CSS FOOTER 
+---------------------------------------------------------------*/
+.footer{
+    background-image: linear-gradient(to right bottom, #9db176, #9caf75, #9bad74, #99ac74, #98aa73, #96a871, #93a56f, #91a36d, #8d9f6a, #899b66, #869863, #829460);
+}
+
+.footer h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bolder; 
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.mapa{
+    width: 600px;
+    height: 335px;
+}
+
+.container-formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.fila p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.fila img{
+    width: 25px;
+    height: 25px;
+}
+
+.place{
+    display: flex;
+}
+
+.mail{
+    display: flex;
+}
+
+.mail img{
+    margin-top: 2px;
+}
+
+.phone{
+    display: flex;
+}
+
+.datos-personales-relleno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.datos-personales-relleno input{
+    background-color: #EEEEEE;
+    height: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    border: none;
+    padding-right: 120px;
+
+}
+
+.motivo-de-contacto-titulo h3{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold; 
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.motivo-contacto{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    gap: 30px;
+}
+
+.motivo-contacto label{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border: none;
+}
+
+.mensaje-contacto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mensaje-contacto input{
+    background-color: #EEEEEE;
+    height: 100px;
+    width: 1100px;
+    font-size: 14px;
+    text-align: center; 
+    border: none;
+}
+
+.enviar-limpiar-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.enviar-limpiar-form input{
+    background-color: #EEEEEE;
+    border: none;
+    font-size: 15px;
+    border: 4px solid #ffe1e1;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.enviar-limpiar-form input:hover{color:black; background-color: #FFE1E1; transform: scale(1.1);}
+.enviar-limpiar-form input:active{color: red;}
+
+.datos-final{
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    padding: 20px 0px 20px 0px;
+} 
+
+
+@media(max-width:1200px) {
+    .container-formulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+    .mapa{
+    display: none;
+    }
+
+    .fila{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .place{
+    justify-content: center;
+    margin: 0px;
+    }
+
+    .mail{
+    justify-content: center;
+    }
+
+    .phone{
+    justify-content: center;
+    }
+
+    .formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .datos-personales-relleno{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    }
+
+    .datos-personales-relleno input{
+    border: 1px solid black;
+    width: 300px;
+    }
+
+    .motivo-de-contacto-titulo{
+    text-align: center;
+    }
+
+    .motivo-contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0;
+    justify-content: space-between;
+    gap: 0px;
+    padding-top: 20px;
+    align-content: center;
+    }
+
+    .motivo-contacto input{
+    justify-self: center;
+    }
+
+    .mensaje-contacto{
+    padding-top: 20px;
+    justify-content: center;
+    }
+
+    .mensaje-contacto input{
+    height: 200px;
+    width: 300px;
+    }
+
+.enviar-limpiar-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    }
+
+.datos-final{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    }
+}
+/* ------------------------------------------------------------- 
+Termina CSS Footer 
+---------------------------------------------------------------*/

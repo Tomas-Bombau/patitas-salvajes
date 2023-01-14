@@ -1,0 +1,40 @@
+.nuestra-mision{
+    background-color: white;;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+    h2{
+        color: black;
+        font-family: $titulos-subtitulos-font;
+        font-weight: bold; 
+        font-size: 35px;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .container-misiones{
+        @include flex (row, space-evenly, none, wrap);
+        .misiones{
+            width: 33%;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            h3{
+                color: black;   
+                font-family: $p-font;
+                font-weight: bold; 
+                font-size: 25px;
+                text-align: center;
+                padding: 10px 0px;
+            }
+            p{
+                color: black;
+                font-family: $p-font;
+                font-weight: 500; 
+                font-size: 15px;
+                text-align: center; 
+                padding: 0px 10px 20px 10px;
+            }
+        }
+    }
+}

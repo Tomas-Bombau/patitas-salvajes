@@ -1,0 +1,101 @@
+.nuestro-trabajo{
+    background-color: $green-color;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+    .nuestro-trabajo-titulo{
+        -webkit-animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: nuestro-trabajo-titulo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @-webkit-keyframes nuestro-trabajo-titulo {
+        0% {
+        -webkit-transform: translateY(1000px);
+                transform: translateY(1000px);
+        opacity: 0;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+        }
+        }
+        @keyframes nuestro-trabajo-titulo {
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+        h2{
+            color: white;
+            font-family: $titulos-subtitulos-font;
+            font-weight: bold; 
+            font-size: 35px;
+            text-align: center;
+            padding: 20px 0px;
+        }
+    }
+    .container-etapas-trabajo{
+        @include flex (row, center, none, wrap);
+        -webkit-animation: container-etapas-trabajo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: container-etapas-trabajo 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @-webkit-keyframes container-etapas-trabajo {
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }
+        @keyframes container-etapas-trabajo {
+            0% {
+            -webkit-transform: translateY(1000px);
+                    transform: translateY(1000px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            opacity: 1;
+            }
+        }    
+        .etapas-trabajo{
+            width: 33%;
+            text-align: center;
+            h3{
+                color: white;
+                font-family: $p-font;
+                font-weight: bold; 
+                font-size: 25px;
+                text-align: center;
+                padding: 10px 0px;
+            } 
+            img{
+                width: 300px;
+                height: 200px;
+                border-radius: 200px 100px;
+                border-style: ridge;
+                outline: 3px solid $pink-color;    
+            }
+            p{
+                color: white;
+                font-family: $p-font;
+                font-size: 15px;
+                text-align: justify;
+                padding: 0px 20px 20px; 
+            }
+            a{
+                text-decoration: none;
+                &:hover{color: $pink-color; font-weight:700}
+            }
+        }
+    }
+}

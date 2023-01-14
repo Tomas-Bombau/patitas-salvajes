@@ -1,0 +1,536 @@
+@media(max-width:768px) {
+/* MEDIA QUERIE HEADER */
+    .nav-bar{
+        .nav-bar-logo-patitas-salvajes{
+            display: none;
+        }
+        .menu-navegacion{ 
+            li{ 
+                a{
+                    font-size: 14px;
+                    text-decoration: none;
+                    padding: 10px 5px;
+                }
+            }
+            .dropdown{
+                .dropdown-content a{
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+/* MEDIA QUERIE ADOPTA */
+    .adopciones{
+        height: 400px;
+        h1{
+            font-size: 35px;
+        }
+    }
+    .adopciones-presentacion{
+        max-width: 80%;
+        h2{
+            font-size: 30px;
+        }
+        .adopciones-presentacion-contacto{
+            height: 60px;
+        }
+    }
+    .container-testimonio{
+        h2{
+            width: 500px;
+        }
+        .testimonio{
+            width: 500px;
+            height: 350px;
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 14px;     
+            }
+        }
+    }
+
+/* MEDIA QUERIE ELREFUGIO */
+    .el-refugio{
+        height: 400px;
+        h1{
+            font-size: 35px;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+        }
+    }
+
+    .container-el-refugio{
+        @include grid (center, none, repeat (1,1fr), 50px 200px 300px 600px 600px 600px);
+        max-width: 100%;
+        grid-template-areas:
+        "refugio-subtitulo"
+        "refugio-1-imagen"
+        "refugio-1"
+        "refugio-casona"
+        "refugio-jardin"
+        "refugio-casitas";
+
+        .refugio-subtitulo{
+            display: none;
+        }
+        .refugio-1-imagen{
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 30px;
+            img{
+                height: 200px;
+                width: 350px;
+            }
+        }
+        .refugio-1-texto{
+            text-align: center;
+            margin: 0px;
+        }
+        .refugio-1-horario{
+            p{
+            text-align: center;
+            margin: 30px 30px 0px;
+            }
+        }
+        .refugio-casona{
+            @include flex (column,center,center,none);
+            img{
+                height: 200px;
+                width: 350px;
+            }
+            h3{
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+                margin: auto;
+            }
+            p{
+                padding: 10px;
+                text-align: center;
+                margin: auto;
+            }
+        }
+        .refugio-jardin{
+            @include flex (column,center,center,none);
+            img{
+                height: 200px;
+                width: 350px;
+            }
+            h3{
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+                margin: auto;
+            }
+            p{
+                padding: 10px;
+                text-align: center;
+                margin: auto;
+            }
+        }
+        .refugio-casitas{
+            @include flex (column,center,center,none);
+            img{
+                height: 200px;
+                width: 350px;
+            }
+            h3{
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+                margin: auto;
+            }
+            p{
+                padding: 10px;
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+
+/* MEDIA QUERIE ELREFUGIO */
+    .visitas-educativas{
+        height: 350px;
+        h1{
+            font-size: 35px;
+            font-family: $titulos-subtitulos-font;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+    
+    .container-visitas-educativas{
+        height: 2600px;
+        max-width: 100%;
+        @include grid (none, none, repeat (1,1fr), 50px 200px 100px 0px 350px 350px 350px 350px 350px 350px 100px);
+        grid-template-areas:
+        "visitas-educativas-subtitulo"
+        "educacion-parrafo "
+        "dias-horarios "
+        "texto-imagen"
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen7" 
+        "imagen9"
+        "reservas"
+        ;
+        .visitas-educativas-subtitulo{
+            margin: 0px;
+            h2{
+                font-size: 30px;
+            }
+        }
+        
+        .imagen1 {
+            img{
+                border-radius: 10% 10%;
+                border-style: none;
+            }
+        }
+        
+        .imagen2 {
+            img{
+                border-radius: 10% 10%;
+                border-style: none;
+            }
+        }
+        
+        .imagen3 {
+            img{
+                border-radius: 10% 10%;
+                border-style: none;
+            }
+        }
+        
+        .imagen4{
+            img{
+                border-radius: 10% 10%;
+                border-style: none;
+            }
+        }
+        
+        .imagen5{
+            display: none;
+        }
+        
+        .imagen6{
+            display: none;
+        }
+        
+        .imagen7{
+            img{
+                border-radius: 10% 10%;
+                border-style: none;
+            }
+        }
+        
+        .imagen8{
+            display: none;
+        }
+        
+        .imagen9{
+            img{
+                border-radius: 10% 10%;
+                border-style: none;
+            }
+        }
+        
+        .texto-imagen{
+            display: none;
+        }
+    }
+
+/* MEDIA QUERIE FOOTER */
+    .footer{
+        .container-formulario{
+            @include flex (column, center, center, wrap);
+            .mapa{
+                width: 320px;
+                height: 300px;
+            }
+            .fila{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                .place{
+                    justify-content: center;
+                    margin: 0px;
+                }
+                .mail{
+                    justify-content: center;
+                }
+                .phone{
+                    justify-content: center;
+                }
+            }
+            .formulario{
+                @include flex (column, center, center, wrap);
+                .datos-personales-relleno{
+                    @include flex (column, center, none, wrap);
+                    gap: 5px;
+                    input{
+                        border: 1px solid black;
+                        width: 300px;
+                    }
+                }
+                .motivo-de-contacto-titulo{
+                    text-align: center;
+                }
+                .motivo-contacto{
+                    @include flex (column, space-between, center, wrap);
+                    margin:0;
+                    gap: 0px;
+                    input{
+                        justify-self: center;
+                    }
+                }
+                .mensaje-contacto{
+                    padding-top: 20px;
+                    justify-content: center;
+                    input{
+                        height: 200px;
+                        width: 300px;
+                    }
+                }
+                .enviar-limpiar-form{
+                    @include flex (row, center, center, wrap);
+                    gap: 10px;
+                }
+            }
+            .datos-final{
+                text-align: center;
+                padding: 20px 0px 20px 0px;
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    .container-visitas-educativas{
+        height: 2700px;
+        @include grid (none, none, repeat(1, 1fr),50px 300px 100px 0px 350px 350px 350px 350px 350px 350px 100px );
+        grid-template-areas:
+        "visitas-educativas-subtitulo"
+        "educacion-parrafo "
+        "dias-horarios "
+        "texto-imagen"
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen7" 
+        "imagen9"
+        "reservas"
+        ;
+    }
+}
+
+@media(max-width:500px){
+/* MEDIA QUERIE ELREFUGIO */
+    .el-refugio{
+        background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        position: relative;
+        height: 350px;
+    }
+    .container-el-refugio{
+        @include grid (center, none, repeat (1,1fr), 50px 200px 400px 600px 600px 600px);
+        grid-template-areas:
+        "refugio-subtitulo"
+        "refugio-1-imagen"
+        "refugio-1"
+        "refugio-casona"
+        "refugio-jardin"
+        "refugio-casitas";
+    }        
+
+/* MEDIA QUERIE HEADER */
+    .nav-bar{
+        @include flex (row, none, none, wrap);
+        .redes-sociales{
+        margin-top: 10px;
+            img{
+            height: 30px;
+            width: 30px;
+            }
+        } 
+        .menu-navegacion{ 
+            li{ 
+                a{
+                    font-size: 13px;
+                    text-decoration: none;
+                    padding: 10px 5px;
+                }
+            }
+            .dropdown{
+                .dropdown-content a{
+                    font-size: 13px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px){
+/* MEDIA QUERIE ADOPTA */
+    .adopciones{
+        height: 300;
+        h1{
+            font-size: 35px;
+        }
+    }
+    .adopciones-presentacion{
+        max-width: 90%;
+        .adopciones-presentacion-contacto{
+            height: 80px;
+        }
+    }
+    .container-testimonio{
+        h2{
+            width: 390px;
+        }
+        .testimonio{
+            width: 390px;
+            height: 250px;  
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 14px;     
+            }
+        }
+    }
+
+/* MEDIA QUERIE VISITAS-EDUCATIVAS */
+    .visitas-educativas{
+        height: 300px;
+        h1{
+            font-size: 35px;
+        }
+    }
+    .container-visitas-educativas{
+        height: 2720px;
+        @include grid (none, none, repeat(1, 1fr),50px 330px 100px 0px 350px 350px 350px 350px 350px 350px 100px);
+        grid-template-areas:
+        "visitas-educativas-subtitulo"
+        "educacion-parrafo "
+        "dias-horarios "
+        "texto-imagen"
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen7" 
+        "imagen9"
+        "reservas";
+    }
+}
+
+@media (max-width: 390px){
+/* MEDIA QUERIE ADOPTA */
+    .adopciones-presentacion{
+        max-width: 100%;
+    }
+    .container-perros-en-adopcion{
+        .perros-en-adopcion{
+            img{
+            width: 300px;
+            height: 200px;
+            }
+        }
+    }
+    .container-testimonio{
+        h2{
+            width: 300px;
+        }
+        .testimonio{
+            width: 300px;
+            height: 200px;
+            .testimonio1{  
+                width: 200px;
+                height: 150px;
+                h3{
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+                p{
+                    font-size: 10px;     
+                }
+            }
+            .testimonio2{
+                @extend .testimonio1;
+            }
+            .testimonio3{
+                @extend .testimonio1;
+            }
+        }
+    }
+
+/* MEDIA QUERIE ELREFUGIO */
+    .container-el-refugio{
+        @include grid (center, none, repeat (1,1fr), 50px 200px 500px 650px 650px 650px);
+        max-width: 100%;
+        grid-template-areas:
+        "refugio-subtitulo"
+        "refugio-1-imagen"
+        "refugio-1"
+        "refugio-casona"
+        "refugio-jardin"
+        "refugio-casitas";
+        .refugio-1-imagen{
+            img{
+                width: 300px;
+                height: 250px;
+            }
+        }
+        .refugio-casona {
+            img{
+                width: 320px;
+                height: 250px;
+            }
+        }
+        .refugio-jardin {
+            img{
+                width: 320px;
+                height: 250px;
+            }
+        }
+        .refugio-casitas {
+            img{
+                width: 320px;
+                height: 250px;
+            }
+        }
+}
+
+/* MEDIA QUERIE VISITAS EDUCATIVAS */
+    .container-visitas-educativas{
+        height: 2720px;
+        @include grid (none, none, repeat(1, 1fr), 20px 370px 100px 0px 350px 350px 350px 350px 350px 350px 100px);
+        grid-template-areas:
+        "visitas-educativas-subtitulo"
+        "educacion-parrafo "
+        "dias-horarios "
+        "texto-imagen"
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen7" 
+        "imagen9"
+        "reservas";
+    }
+}
+
+

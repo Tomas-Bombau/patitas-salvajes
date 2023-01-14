@@ -1,0 +1,170 @@
+.el-refugio{
+    background-image: url(../assets/el-refugio/el-refugio-portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 600px;
+    h1{
+        color: white;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        top: 60%;
+        left: 50%;
+        font-family: $titulos-subtitulos-font;
+        font-weight: bold; 
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 2px 0px 3px black;
+    }
+}
+
+.container-el-refugio{
+    @include grid (center, none, repeat (5,1fr), 80px 1fr 50px 1fr 1fr 1fr);
+    max-width: 60%;
+    margin: auto;
+    grid-template-areas:
+    "refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo refugio-subtitulo" 
+    "refugio-1 refugio-1 refugio-1 refugio-1-imagen refugio-1-imagen"
+    "refugio-2 refugio-2 refugio-2 refugio-2 refugio-2"
+    "refugio-casona refugio-casona refugio-casona refugio-casona refugio-casona"
+    "refugio-jardin refugio-jardin refugio-jardin refugio-jardin refugio-jardin"
+    "refugio-casitas refugio-casitas refugio-casitas refugio-casitas refugio-casitas";
+    h2{
+        color: black;
+        font-family: $titulos-subtitulos-font;
+        font-weight: bold; 
+        font-size: 35px;
+        text-align: center;
+        padding-top: 5px;
+    }
+    h3{
+        font-family: $p-font;
+        font-weight: bold; 
+        font-size: 25px;
+    }
+    p{
+        color: black; 
+        font-family: $p-font;
+        font-size: 15px;
+    }
+    .refugio-subtitulo{
+        grid-area: refugio-subtitulo;
+        height: 100%;
+        margin: 20px 0px;
+    }
+    
+    .refugio-1{
+        grid-area: refugio-1;
+        height: 100%;
+        p{
+            padding: 20px 50px 0px 30px;
+        }
+        a{
+            text-decoration: none;
+            &:hover{
+                color:$green-color; font-weight:bold;
+            }
+        }
+    }
+    .refugio-1-horario{
+        p{
+            background-color: $green-color;
+            color: white;
+            text-align: center;
+            font-family: $p-font;
+            font-weight: bold; 
+            font-size: 15px;
+            border-radius: 10px;
+            border: black 1px solid;
+            box-shadow: 0px 0px 4px 3px $pink-color inset;
+            margin: 65px 30px 0px;
+            padding: 5px 5px;
+        }
+    }
+    .refugio-1-imagen{
+        grid-area: refugio-1-imagen;
+        align-self: center;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            border-style: ridge;
+            margin-top: 10px;
+        }
+    }
+    .refugio-2{
+        grid-area: refugio-2;
+        height: 5%;
+        align-self: center;
+        background-color: #829460;
+        opacity: 0.5;
+    }
+    .refugio-casona{
+        grid-area: refugio-casona;
+        height: 100%;
+        @include flex (row, space-evenly, center, wrap);
+        img{
+            border-radius: 20px;
+            border-style: ridge;
+            border-color: black;
+        }
+        .refugio-casona-texto{
+            max-width: 700px;
+            h3{
+                color: black;
+            }
+            p{
+                padding: 10px 0px;
+            }
+        }
+    }
+    .refugio-jardin{
+        grid-area: refugio-jardin;
+        background-color: $green-color;
+        height: 100%;
+        @include flex (row, space-evenly, center, wrap);
+        img{
+            border-radius: 20px;
+            border-style: ridge;
+            border-color: black;
+            outline: 2px solid #FFE1E1;
+        }
+        a{
+            text-decoration: none;
+            &:hover{
+                color: $pink-color; font-weight: 700;
+            }
+        }
+        .refugio-jardin-texto{
+            max-width: 700px;
+            h3{
+                color: white;
+            }
+            p{
+                color: white;
+                padding: 10px 0px;
+            }
+        }
+    }
+    .refugio-casitas{
+        grid-area: refugio-casitas;
+        height: 100%;
+        @include flex (row, space-evenly, center, wrap);
+        img{
+            border-radius: 20px;
+            border-style: ridge;
+            border-color: black;
+        }
+        .refugio-casitas-texto{
+            max-width: 700px;
+            h3{
+                color: black;
+            }
+            p{
+                padding: 10px 0px;
+            }
+        }
+    }
+}
